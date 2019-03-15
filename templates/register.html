@@ -1,0 +1,47 @@
+{% extends 'layout.html' %} 
+{% block body %}
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" ><a href="/">Home</a></li>
+                    <li role="presentation"><a href="/login">Login</a></li>
+                    <li role="presentation" class="active"><a href="/register">Register</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Environmental System App</h3>
+        </div> 
+
+
+      <div class="jumbotron">
+          <div class="container">
+              <div class="row" style="margin-top: 40px">
+                  <div class="col-sm-6">
+                      <!--<h1 class="text-center">Environmental System App</h1>-->
+                      <form method="POST">
+                          <div class="form-group">
+                              <label for="email">Username : </label>
+                              <input type="text" name="uname" class="form-control" id="uname">
+                          </div>
+                          <div class="form-group">
+                              <label for="email">Email : </label>
+                              <input type="email" name="mail" class="form-control" id="mail">
+                          </div>
+                          <div class="form-group">
+                              <label for="email">Password : </label>
+                              <input type="password" name="passw" class="form-control" id="passw">
+                          </div>
+                          <button type="submit" class="btn form-control btn-default btn-primary">Register</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+{% endblock %}  
+      
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

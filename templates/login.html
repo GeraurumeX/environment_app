@@ -1,0 +1,44 @@
+{% extends 'layout.html' %} 
+{% block body %}
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/">Home</a></li>
+            <li role="presentation" class="active"><a href="/login">Login</a></li>
+            <li role="presentation" ><a href="/register">Register</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Environmental System App</h3>
+      </div>
+ 
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row" style="margin-top: 40px">
+                    <div class="col-sm-6">
+                        <form method="POST">
+                            <div class="form-group">
+                                <label for="email">Username : </label>
+                                <input type="text" name="uname" class="form-control" id="uname">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Password : </label>
+                                <input type="password" name="passw" class="form-control" id="passw">
+                            </div>
+                            <button type="submit" class="btn form-control btn-default btn-success">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+{% endblock %}       
+ 
+      <footer class="footer">
+        <p>&copy; Company 2015</p>
+      </footer>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
