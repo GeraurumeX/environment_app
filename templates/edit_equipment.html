@@ -1,0 +1,31 @@
+{% extends 'layout_equipos.html' %} {% block body %}
+<div class="col-md-4 offset-md-4">
+    <div class="card card-body">
+        <form action="/update_equipos/{{ equipment.0 }}" method="POST">
+
+            <div class="form-group">
+                <input type="text" name="name" placeholder="nombre del equipo" value="{{ equipment.1 }}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="location" placeholder="ubicación del equipo" value="{{ equipment.2 }}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="date" name="fecha_mantto_prog" placeholder="fecha programada" value="{{ equipment.3 }}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="date" name="fecha_mantto_real" placeholder="fecha real" value="{{ equipment.4 }}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-block">Save</button>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}
