@@ -56,6 +56,10 @@ def login():
 def menu_principal():
     return render_template("menu_principal.html")
 
+@app.route("/soon")
+def index_soon():
+    return render_template("index_soon.html")
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
