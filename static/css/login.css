@@ -1,0 +1,12 @@
+body {
+    background-image: url('../img/rambla_montevideo.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+footer {
+    color: #fff;
+}
